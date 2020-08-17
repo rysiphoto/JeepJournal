@@ -1,0 +1,27 @@
+
+body {
+  background-image: url('../src/assets/background.jpg');
+  position: flex;
+  min-width: 100%;
+  background-attachment: fixed;
+  min-height: 100%;
+  background-size: fixed;
+  background-position: center;
+  margin-top: 20px;
+  margin-left: 10px;
+
+}
+
+footer {
+  font-size: 12px;
+  color: white;
+  border-top-style: solid;
+  border-top-color: crimson;
+  border-top-width: 3px;
+  background-color: rgb(61, 61, 61);
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
