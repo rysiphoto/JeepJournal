@@ -5,8 +5,9 @@ const MaintainSchema = new Schema({
   part: { type: String, required: true },
   fluid: { type: String, required: true },
   amount: { type: String, required: true },
+  mile: { type: String, required: true },
+  duration: { type: String, required: true },
   date: { type: Date, default: Date.now },
-  duration: { type: String, required: true }
 
 });
 
