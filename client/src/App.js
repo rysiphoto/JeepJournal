@@ -5,7 +5,7 @@ import Home from "./Pages/Home/";
 import Maintain from "./Pages/Maintain/";
 import Trips from "./Pages/Trips/";
 import Menu from "./Components/Menu";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (

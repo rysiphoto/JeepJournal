@@ -22,28 +22,28 @@ export default class Maintain extends Component {
   }
 
   getMaintainEntries = () => {
-    axios.get("/api/maintain")
+    axios.get("/api/maintain/maintain")
       .then(res => this.setState({ posts: res.data }))
       .catch(err => console.log(err))
   }
 
   handleChange = e => {
     const { name, value } = e.target
-    const post = { ... this.state.post }
+    const post = { ...this.state.post }
     post[name] = value
     this.setState({ post: post })
   }
 
   handleSubmit = e => {
     e.preventDefault()
-    axios.post("/api/maintain", this.state.post)
+    axios.post("/api/maintain/maintain", this.state.post)
       .then(res => this.getMaintainEntries())
       .catch(err => console.log(err))
   }
 
   render() {
     return (
-      <div className="containerHome">
+      <div>
         <MaintainForm
           part={this.state.post.part}
           fluid={this.state.post.fluid}
