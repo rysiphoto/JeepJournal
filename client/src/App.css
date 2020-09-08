@@ -8,7 +8,6 @@ body {
   background-size: fixed;
   background-position: center;
   margin-top: 0px;
-  margin-left: 0px;
 }
 
 footer {
@@ -23,4 +22,10 @@ footer {
   left: 0;
   right: 0;
   height: 30px;
+}
+
+.containerHome
+{
+  margin-left: 20px;
+  margin-right: 20px;
 }
