@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="container">
       <Segment>
-        <p>
+        <p className="containerFont">
           A place for Jeep owners to keep track of all of the things.
         </p>
       </Segment>

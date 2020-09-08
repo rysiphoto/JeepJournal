@@ -13,7 +13,7 @@ function App() {
       <Menu />
       <Route exact path="/" component={Home} />
       <Route exact path="/Home" component={Home} />
-      <Maintain exact path="/Maintain" component={Maintain} />
+      <Route exact path="/Maintain" component={Maintain} />
       <Route exact path="/Trips" component={Trips} />
       <Footer />
     </Router>

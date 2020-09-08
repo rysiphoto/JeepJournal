@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the TravelsController
+// Defining methods for the MaintainController
 module.exports = {
   findAll: function (req, res) {
     db.Maintain
