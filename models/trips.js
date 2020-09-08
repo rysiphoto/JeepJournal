@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const TripsSchema = new Schema({
   title: { type: String, required: true },
   destination: { type: String, required: true },
-  trails: { type: String, required: true },
+  trail: { type: String, required: true },
   date: { type: Date, default: Date.now },
   details: { type: String, required: true }
 

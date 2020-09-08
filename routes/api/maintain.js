@@ -7,8 +7,7 @@ router.route("/maintain")
   .post(maintainController.create);
 
 // Matches with "/api/maintain/:id"
-router
-  .route("/maintain/:id")
+router.route("/maintain/:id")
   .get(maintainController.findById)
   .put(maintainController.update)
   .delete(maintainController.remove);

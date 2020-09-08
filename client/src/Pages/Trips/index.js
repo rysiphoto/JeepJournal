@@ -1,6 +1,5 @@
 import './style.css';
 import React, { Component } from 'react';
-import { Segment } from 'semantic-ui-react'
 import TripsCard from "../../Components/TripsCard"
 import TripsForm from "../../Components/TripsForm"
 import axios from "axios"
@@ -43,20 +42,13 @@ export default class Trips extends Component {
   render() {
     return (
       <>
-        <div className="container">
-          <Segment>
-            <p className="containerFont">
-              Which trails did I run in Moab and when? Enter that info here!
-        </p>
-          </Segment>
-        </div>
         <div>
           <TripsForm
             title={this.state.post.title}
             destination={this.state.post.destination}
             trail={this.state.post.trail}
             date={this.state.post.date}
-            details={this.state.post.mile}
+            details={this.state.post.details}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
           />

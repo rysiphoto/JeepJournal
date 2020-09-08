@@ -1,3 +1,9 @@
 .containerFont {
   color: black;
 }
+
+.container
+{
+  margin-left: 20px;
+  margin-right: 60px;
+}

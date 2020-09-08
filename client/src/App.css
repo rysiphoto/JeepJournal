@@ -27,5 +27,14 @@ footer {
 .containerHome
 {
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 50px;
+  width: 98%;
+  margin-top: 20px;
+  background-color: White;
+  border-width: 3px;
+  border-radius: 15px;
+  border: 3px solid rgb(44, 92, 44);
+  padding-left: 15px;
+  padding-top: 10px;
+
 }
