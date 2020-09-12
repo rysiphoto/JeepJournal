@@ -25,6 +25,12 @@ export default class Trips extends Component {
       .catch(err => console.log(err))
   }
 
+  // deleteTripsEntries = () => {
+  //   axios.delete("/api/trips/trips/${id}")
+  //     .then(res => this.setState({ posts: res.data }))
+  //     .catch(err => console.log(err))
+  // }
+
   handleChange = e => {
     const { name, value } = e.target
     const post = { ...this.state.post }
