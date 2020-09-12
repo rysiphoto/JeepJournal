@@ -8,8 +8,7 @@ const MaintainSchema = new Schema({
   measurement: { type: String, required: false },
   mile: { type: Number, required: true },
   duration: { type: Number, required: true },
-  date: { type: Date, default: Date.now },
-  user: { type: mongoose.Types.ObjectId, ref: 'User' }
+  date: { type: Date, default: Date.now }
 
 });
 

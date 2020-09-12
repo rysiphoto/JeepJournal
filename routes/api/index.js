@@ -9,6 +9,7 @@ router.use("/trips", tripsRoutes);
 router.use("/maintain", maintainRoutes);
 // user route
 router.use("/user", userRoutes);
+
 module.exports = router;
 
 

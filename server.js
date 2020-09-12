@@ -1,4 +1,4 @@
-const cookieParser = require("cookie-parser");
+// const cookieParser = require("cookie-parser");
 const express = require("express");
 const mongoose = require("mongoose");
 const logger = require("morgan");
@@ -13,7 +13,7 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
-app.use(cookieParser);
+// app.use(cookieParser);
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -22,9 +22,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/JeepJournal", { useNewUrlParser: true, useUnifiedTopology: true }, () => {
-  console.log('Successfully connected to database');
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/JeepJournal", { useNewUrlParser: true });
 
 // Start the API server
 app.listen(PORT, function () {

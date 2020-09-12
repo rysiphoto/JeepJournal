@@ -6,8 +6,7 @@ const TripsSchema = new Schema({
   destination: { type: String, required: true },
   trail: { type: String, required: true },
   date: { type: Date, default: Date.now },
-  details: { type: String, required: true },
-  user: { type: mongoose.Types.ObjectId, ref: 'User' }
+  details: { type: String, required: true }
 
 });
 
