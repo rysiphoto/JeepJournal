@@ -22,7 +22,7 @@ export default class Maintain extends Component {
   }
 
   getMaintainEntries = () => {
-    axios.get("/api/maintain/maintain")
+    axios.get("/api/user/user/maintain")
       .then(res => this.setState({ posts: res.data }))
       .catch(err => console.log(err))
   }
@@ -36,7 +36,7 @@ export default class Maintain extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    axios.post("/api/maintain/maintain", this.state.post)
+    axios.post("/api/user/user/maintain", this.state.post)
       .then(res => this.getMaintainEntries())
       .catch(err => console.log(err))
   }
@@ -44,21 +44,29 @@ export default class Maintain extends Component {
   render() {
     return (
       <div>
-        <MaintainForm
-          part={this.state.post.part}
-          fluid={this.state.post.fluid}
-          mile={this.state.post.mile}
-          duration={this.state.post.duration}
-          amount={this.state.post.amount}
-          date={this.state.post.date}
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-        />
-        {this.state.posts.map(post => (
-          <Card post={post} key={post._id} />
-        ))}
+        <div>
+          <MaintainForm
+            part={this.state.post.part}
+            fluid={this.state.post.fluid}
+            mile={this.state.post.mile}
+            duration={this.state.post.duration}
+            amount={this.state.post.amount}
+            date={this.state.post.date}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+          />
+          {this.state.posts.map(post => (
+            <Card post={post} key={post._id} />
+          ))}
+        </div>
+        <div className="col-md-4">
+          <p>
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
       </div>
-
     )
   }
 }

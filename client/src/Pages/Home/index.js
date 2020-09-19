@@ -16,6 +16,13 @@ const Home = () => {
           Over on the Maintenance page, you can keep track of all of your mods and when they are due to be serviced.
         </p>
       </Segment>
+      <div class="col-md-4">
+        <p>
+          <br />
+          <br />
+          <br />
+        </p>
+      </div>
     </div>
   )
 }

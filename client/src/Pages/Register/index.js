@@ -1,9 +1,9 @@
 import './style.css';
 import React, { Component } from 'react';
-import LoginForm from "../../Components/LoginForm"
+import RegisterForm from "../../Components/RegisterForm"
 import axios from "axios"
 
-export default class Login extends Component {
+export default class Register extends Component {
 
   state = {
     post: {
@@ -16,10 +16,10 @@ export default class Login extends Component {
   }
 
   componentDidMount() {
-    this.getLoginEntries()
+    this.getRegisterEntries()
   }
 
-  getLoginEntries = () => {
+  getRegisterEntries = () => {
     axios.get("/api/user/user")
       .then(res => this.setState({ posts: res.data }))
       .catch(err => console.log(err))
@@ -35,7 +35,7 @@ export default class Login extends Component {
   handleSubmit = e => {
     e.preventDefault()
     axios.post("/api/user/user", this.state.post)
-      .then(res => this.getLoginEntries())
+      .then(res => this.getRegisterEntries())
       .catch(err => console.log(err))
   }
 
@@ -43,9 +43,12 @@ export default class Login extends Component {
     return (
       <div>
         <div>
-          <LoginForm
+          <RegisterForm
             email={this.state.post.email}
             password={this.state.post.password}
+            confirmPassword={this.state.post.confirmPassword}
+            firstName={this.state.post.firstName}
+            lastName={this.state.post.lastName}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
           />
