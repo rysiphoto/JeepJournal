@@ -2,11 +2,15 @@
 body {
   background-image: url('../src/assets/background.jpg');
   position: flex;
+  /* background-size: auto; */
+  background-size: 100% auto;
+
   /* min-width: 100%; */
   background-attachment: fixed;
   /* min-height: 100%; */
-  background-size: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
   margin-top: 0px;
 }
 

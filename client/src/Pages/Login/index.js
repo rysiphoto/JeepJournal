@@ -20,7 +20,7 @@ export default class Login extends Component {
   }
 
   getLoginEntries = () => {
-    axios.get("/api/user/user")
+    axios.get("/api/user")
       .then(res => this.setState({ posts: res.data }))
       .catch(err => console.log(err))
   }
@@ -34,7 +34,7 @@ export default class Login extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    axios.post("/api/user/user", this.state.post)
+    axios.post("/api/user", this.state.post)
       .then(res => this.getLoginEntries())
       .catch(err => console.log(err))
   }

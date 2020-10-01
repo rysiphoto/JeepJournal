@@ -22,7 +22,7 @@ export default class Maintain extends Component {
   }
 
   getMaintainEntries = () => {
-    axios.get("/api/user/user/maintain")
+    axios.get("/api/maintain/maintain")
       .then(res => this.setState({ posts: res.data }))
       .catch(err => console.log(err))
   }
@@ -36,7 +36,7 @@ export default class Maintain extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    axios.post("/api/user/user/maintain", this.state.post)
+    axios.post("/api/maintain/maintain", this.state.post)
       .then(res => this.getMaintainEntries())
       .catch(err => console.log(err))
   }

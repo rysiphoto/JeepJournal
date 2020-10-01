@@ -20,13 +20,13 @@ export default class Trips extends Component {
   }
 
   getTripsEntries = () => {
-    axios.get("/api/user/user/trips")
+    axios.get("/api/trips/trips")
       .then(res => this.setState({ posts: res.data }))
       .catch(err => console.log(err))
   }
 
   // deleteTripsEntries = () => {
-  //   axios.delete("/api/trips/trips/${id}")
+  //   axios.delete("/api/trips/trips/")
   //     .then(res => this.setState({ posts: res.data }))
   //     .catch(err => console.log(err))
   // }
@@ -40,7 +40,7 @@ export default class Trips extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    axios.post("/api/user/user/trips", this.state.post)
+    axios.post("/api/trips/trips", this.state.post)
       .then(res => this.getTripsEntries())
       .catch(err => console.log(err))
   }
@@ -62,7 +62,7 @@ export default class Trips extends Component {
             <TripsCard post={post} key={post._id} />
           ))}
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <p>
             <br />
             <br />
