@@ -30,15 +30,15 @@ footer {
 
 .containerHome
 {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
   width: 98%;
   margin-top: 10px;
   background-color: White;
   border-width: 3px;
   border-radius: 15px;
   border: 3px solid rgb(44, 92, 44);
-  padding-left: 15px;
+  padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 15px;
@@ -47,8 +47,8 @@ footer {
 
 .containerHomeLogin {
   width: 40%;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-top: 10px;
   background-color: White;
   border-width: 3px;
