@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import MaintainForm from "../../Components/MaintainForm"
 import Card from "../../Components/Card"
 import axios from "axios"
+import VehicleInfo from "../../Components/VehicleInfo"
 
 export default class Maintain extends Component {
 
@@ -44,6 +45,7 @@ export default class Maintain extends Component {
   render() {
     return (
       <div>
+        <VehicleInfo />
         <div>
           <MaintainForm
             part={this.state.post.part}
