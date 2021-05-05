@@ -4,25 +4,18 @@ import { Segment } from 'semantic-ui-react'
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="containerHomeLogin">
       <Segment>
         <p className="containerFont">
           Welcome to the Jeep Journal
         <br /><br />
           A place for Jeep owners to keep track of all of the things.
           <br /><br />
-          On the Trips page, keep track of your trail adventures with setting the trail name, date and details about your adventure!
+          On the Trips Page, keep track of your trail adventures with setting the trail name, date and details about your adventure!
           <br /><br />
-          Over on the Maintenance page, you can keep track of all of your mods and when they are due to be serviced.
+          Over on the Maintenance Page, you can keep track of all of your mods and when they are due to be serviced.
         </p>
       </Segment>
-      <div className="col-md-4">
-        <p>
-          <br />
-          <br />
-          <br />
-        </p>
-      </div>
     </div>
   )
 }

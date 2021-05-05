@@ -12,6 +12,11 @@ export default class Register extends Component {
       confirmPassword: "",
       firstName: "",
       lastName: "",
+      vehicleMake: "",
+      vehicleModel: "",
+      vehicleTrim: "",
+      vehicleYear: "",
+      vehicleColor: ""
     }, posts: []
   }
 
@@ -49,6 +54,11 @@ export default class Register extends Component {
             confirmPassword={this.state.post.confirmPassword}
             firstName={this.state.post.firstName}
             lastName={this.state.post.lastName}
+            vehicleMake={this.state.post.vehicleMake}
+            vehicleModel={this.state.post.vehicleModel}
+            vehicleTrim={this.state.post.vehicleTrim}
+            vehicleYear={this.state.post.vehicleYear}
+            vehicleColor={this.state.post.vehicleColor}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
           />

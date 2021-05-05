@@ -7,6 +7,11 @@ const UserSchema = new Schema({
   confirmPassword: { type: String, required: true, minlength: 5 },
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
+  vehicleMake: { type: String, required: true },
+  vehicleModel: { type: String, required: true },
+  vehicleTrim: { type: String, required: true },
+  vehicleYear: { type: String, required: true },
+  vehicleColor: { type: String, required: true },
 
 });
 
