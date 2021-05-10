@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const MaintainSchema = new Schema({
+  _id: { type: String},
   part: { type: String, required: true },
   fluid: { type: String, required: false },
   amount: { type: Number, required: false },

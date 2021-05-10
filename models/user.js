@@ -12,7 +12,6 @@ const UserSchema = new Schema({
   vehicleTrim: { type: String, required: false },
   vehicleYear: { type: String, required: false },
   vehicleColor: { type: String, required: true },
-
 });
 
 const User = mongoose.model("User", UserSchema);
