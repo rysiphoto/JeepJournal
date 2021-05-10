@@ -1,7 +1,7 @@
 import './style.css';
 import React, { Component } from 'react';
 import MaintainForm from "../../Components/MaintainForm"
-import Card from "../../Components/Card"
+import Card from "../../Components/MaintainCard"
 import axios from "axios"
 import VehicleInfo from "../../Components/VehicleInfo"
 
@@ -72,4 +72,3 @@ export default class Maintain extends Component {
     )
   }
 }
-

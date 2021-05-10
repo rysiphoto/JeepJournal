@@ -9,8 +9,8 @@ const UserSchema = new Schema({
   lastName: { type: String, required: true },
   vehicleMake: { type: String, required: true },
   vehicleModel: { type: String, required: true },
-  vehicleTrim: { type: String, required: true },
-  vehicleYear: { type: String, required: true },
+  vehicleTrim: { type: String, required: false },
+  vehicleYear: { type: String, required: false },
   vehicleColor: { type: String, required: true },
 
 });
